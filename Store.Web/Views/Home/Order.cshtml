@@ -1,0 +1,12 @@
+﻿@model Store.Model.Order
+@{
+    ViewBag.Title = "Order";
+}
+
+<h2>Order</h2>
+
+@using (Html.BeginForm("OrderSubmit", "Home", null, System.Web.Mvc.FormMethod.Post, new { @class = "navbar-form" }))
+{
+   <input type="submit" value="Submit"/>
+}
+
